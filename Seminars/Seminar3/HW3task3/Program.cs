@@ -1,7 +1,7 @@
 ﻿//Напишите программу, которая принимает на вход число (N) и выдаёт таблицу квадратов чисел 
 //от 1 до N.
 //Methods/////////////////////////////////////////////////////
-double GetIntFromConsole()
+int GetIntFromConsole()
 {    
     string NumStr = Console.ReadLine();
 
@@ -31,5 +31,5 @@ void PrintCubeTab(int N){
 //////////////////////////////////////////////////////////
 
 Console.Write("Введите целое число: ");
-int num = int.Parse(Console.ReadLine());
+int num = GetIntFromConsole();
 PrintCubeTab(num);
